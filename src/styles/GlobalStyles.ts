@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
 
     html, body, #root {
       height: 100%;
+      background-color:#2f3640;
     }
 
     *, button, input {

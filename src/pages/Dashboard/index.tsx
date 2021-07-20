@@ -1,37 +1,13 @@
 import React from 'react'
 
-import {
-  Drawer,
-  DrawerBody,
-  DrawerFooter,
-  DrawerHeader,
-  DrawerOverlay,
-  DrawerContent,
-  DrawerCloseButton,
-} from '@chakra-ui/react'
+import DrawerMenu from '../../components/DrawerMenu'
 
-export default function Dashboard() {
-  const [isOpen, setIsOpen] = React.useState(false)
-  const btnRef = React.useRef()
-
-  const handleOpenDrawer = () => {
-    setIsOpen(!isOpen)
-  }
-  const handleFechar = () => {
-    setIsOpen(false)
-  }
+const Dashboard = () => {
   return (
-    <>
-      <button onClick={handleOpenDrawer}>teste</button>
-      <Drawer
-        isOpen={isOpen}
-        onClose={handleFechar}
-        placement="right"
-
-      >
-        <DrawerHeader>Tesatando Drawer</DrawerHeader>
-        <DrawerBody>texto</DrawerBody>
-      </Drawer>
-    </>
+    <div>
+      <DrawerMenu />
+    </div>
   )
 }
+
+export default Dashboard
