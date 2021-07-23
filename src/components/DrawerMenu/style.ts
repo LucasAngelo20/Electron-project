@@ -7,18 +7,17 @@ interface ToggleProps {
 export const DrawerContainer = styled.div`
   background-color: #353b48;
   width: 50px;
-  height: 695px;
+  height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  position: absolute;
-  z-index: 2;
+  position: relative;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
   transition: width 0.2s ease;
-  overflow-y: hidden;
+  overflow: hidden;
 
   &:hover {
-    width: 150px;
+    width: 175px;
     align-items: flex-end;
     padding-right: 20px;
   }
@@ -27,19 +26,23 @@ export const DrawerIconsGroup = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  cursor: pointer;
 `
 export const DrawerIcon = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
   height: 50px;
   transition: all 0.5s ease;
-
-  &:hover {
-    background-color: #2f3640;
-  }
+  cursor: pointer;
+`
+export const DrawerOptionTitle = styled.p`
+  color: #00a8ff;
+  position: absolute;
+  right: 65px;
+  cursor: pointer;
 `
 
 export const DarkModeToggle = styled.div`

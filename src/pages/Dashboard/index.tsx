@@ -1,11 +1,18 @@
+import { Center } from '@chakra-ui/react'
 import React from 'react'
-
-import DrawerMenu from '../../components/DrawerMenu'
 
 const Dashboard = () => {
   return (
-    <div>
-      <DrawerMenu />
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+        alignItems: 'center',
+        color: '#fff',
+        flex: 1,
+      }}
+    >
+      <h1>Conteudo</h1>
     </div>
   )
 }
