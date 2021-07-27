@@ -1,4 +1,3 @@
-import { Center } from '@chakra-ui/react'
 import React from 'react'
 
 const Dashboard = () => {
@@ -11,9 +10,7 @@ const Dashboard = () => {
         color: '#fff',
         flex: 1,
       }}
-    >
-      <h1>Conteudo</h1>
-    </div>
+    ></div>
   )
 }
 

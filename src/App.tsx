@@ -4,6 +4,7 @@ import { extendTheme } from '@chakra-ui/react'
 
 import { Container, Body } from './style'
 
+import SignUp from './pages/SignUp'
 import Dashboard from './pages/Dashboard'
 import DrawerMenu from './components/DrawerMenu'
 
@@ -24,6 +25,7 @@ export function App() {
         <GlobalStyle />
         <DrawerMenu />
         <Body>
+          <SignUp/>
           <Dashboard />
         </Body>
       </Container>
